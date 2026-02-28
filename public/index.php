@@ -1,6 +1,6 @@
 <?php
 require_once '../config/database.php';
-require_once '../modelos/Producto.php';
+require_once '../models/Producto.php';
 
 $productoModel = new Producto($pdo);
 
