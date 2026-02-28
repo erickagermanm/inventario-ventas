@@ -25,4 +25,24 @@ Su desarrollo contiene una interfaz sencilla y de fácil uso.
 ## 4. Usuario prueba
 - **No requiere login**
 
-## 5. Capturas
+## 5. Capturas Evidencias de Funcionamiento y Pruebas
+
+###  1. Base de Datos (Estructura y Datos)
+![Estructura BD](./public/1.%20Base%20de%20Datos%20en%20phpMyAdmin.png)
+![Productos en BD](./public/1.1%20Productos%20en%20BD%20phpMyAdmin.png)
+
+###  2. Interfaz y Conexión
+*Carga inicial del sistema conectando con la base de datos:*
+![Carga y Conexión](./public/2.%20Carga%20y%20Conexión.png)
+
+###  3. Registro de Productos (CRUD)
+*Proceso de inserción y confirmación de nuevo dato:*
+![Inserción de Datos](./public/3.%20Inserción%20de%20Datos%20(Crear).png)
+![Dato Creado](./public/4.%20Datos%20creado.png)
+
+###  4. Pruebas de Validaciones (Seguridad)
+*El sistema rechaza precios negativos y campos vacíos según lo solicitado:*
+![Precio Negativo](./public/5.1%20Validaciones%20Prueba%20de%20Precio%20Negativo.png)
+![Stock Vacío](./public/5.2%20Validaciones%20rueba%20de%20Stock%20Vacío.png)
+
+
