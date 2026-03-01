@@ -29,4 +29,22 @@ Su desarrollo contiene una interfaz sencilla y de fácil uso.
 - Stock no permite valores negativos (Stock >= 0).
 - Precio debe ser mayor a cero (Precio > 0).
 
-## 5. Capturas
+## 5. Capturas Evidencias de Funcionamiento y Pruebas
+
+###  1. Base de Datos (Estructura y Datos)
+![Estructura](./public/db_estructura.png)
+![Datos](./public/db_datos.png)
+
+###  2. Interfaz y Conexión
+*Carga inicial del sistema conectando con la base de datos:*
+![Conexión](./public/conexion.png)
+
+###  3. Registro de Productos (CRUD)
+*Proceso de inserción y confirmación de nuevo dato:*
+![Registro](./public/registro.png)
+![Tabla](./public/tabla_final.png)
+
+###  4. Pruebas de Validaciones (Seguridad)
+*El sistema rechaza precios negativos y campos vacíos según lo solicitado:*
+![Precio](./public/valida_precio.png)
+![Stock](./public/valida_stock.png)
