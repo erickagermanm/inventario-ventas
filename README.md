@@ -1,3 +1,4 @@
+
 #  Descripción del Sistema Web: Gestión de Inventario + Ventas
 Sistema básico que permite gestionar el inventario, ingreso de productos y registro de ventas
 Su desarrollo contiene una interfaz sencilla y de fácil uso.
@@ -47,5 +48,3 @@ Su desarrollo contiene una interfaz sencilla y de fácil uso.
 *El sistema rechaza precios negativos y campos vacíos según lo solicitado:*
 ![Precio](./public/valida_precio.png)
 ![Stock](./public/valida_stock.png)
-
-
