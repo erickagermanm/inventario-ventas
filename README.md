@@ -44,3 +44,11 @@ Su desarrollo contiene una interfaz sencilla y de fácil uso.
 ![Precio](./public/valida_precio.png)
 ![Stock](./public/valida_stock.png)
 
+### Edición de Productos
+*Interfaz permitiendo la actualización de datos existentes:*
+![Editar Producto](./public/editar.png)
+
+### Eliminación de Productos
+*Confirmación y borrado lógico de registros del sistema:*
+![Eliminar Producto](./public/eliminar.png)
+
