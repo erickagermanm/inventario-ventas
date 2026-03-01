@@ -1,48 +1,51 @@
-# inventario-ventas
 #  Descripción del Sistema Web: Gestión de Inventario + Ventas
 Sistema básico que permite gestionar el inventario, ingreso de productos y registro de ventas
 Su desarrollo contiene una interfaz sencilla y de fácil uso.
 
 ## 1. Requisitos 
-- **XAMPP** con PHP 8.0 o superior.
-- Navegador Web (Chrome, Edge, etc).
-
+- **XAMPP** Tener instalado
+- Descargar este repositorio en `C:/xampp/htdocs/inventario-ventas`.
+- En XAMPP, iniciar Apache y MySQL
+- 
 ## 2. Pasos para la instalación 
-1. **Descargar el proyecto:** Clona este repositorio en `C:/xampp/htdocs/Sistema_ventas`.
+1. **Descargar el proyecto:** Clona este repositorio en `C:/xampp/htdocs/inventario-ventas`.
 2. **Base de Datos:**
    - Abre `localhost/phpmyadmin`.
-   - Crea una base de datos llamada `sistema_inventario`.
-   - Importa el archivo situado en `/database/inventario.sql`.
+   - Importa el archivo `database/productos.sql` en [phpMyAdmin](http://localhost/phpmyadmin/).
 3. **Ejecución:**
    - Abre el Panel de Control de XAMPP e inicia **Apache** y **MySQL**.
-   - Ingresa en tu navegador a: `http://localhost/Sistema_ventas/public/index.php`.
+   - Ingresa en tu navegador a: http://localhost/phpmyadmin/index.php?route=/database/structure&db=inventario_ventas 
 
-## 3. Funcionalidades implementadas
-- **Ventas:** Permite el registro automatizado de cada venta que se genera, almacenando cada transacción.
-- **Inventario:** Permite el control de stock de mercaderia, precios y nombre de productos.
-- **Conexión Segura:** Uso de PDO para la base de datos.
+## 3. Estructura del Proyecto
+- **/config**: Conexión PDO a la Base de Datos.
+- **/database**: Script SQL de creación de tablas.
+- **/models**: Lógica de negocio (CRUD de Productos).
+- **/public**: Interfaz de usuario (Formularios y Tablas).
 
-## 4. Usuario prueba
+## 4. Validaciones implementadas
 - **No requiere login**
+- - Nombre de producto obligatorio.
+- Stock no permite valores negativos (Stock >= 0).
+- Precio debe ser mayor a cero (Precio > 0).
 
 ## 5. Capturas Evidencias de Funcionamiento y Pruebas
 
 ###  1. Base de Datos (Estructura y Datos)
-![Estructura BD](./public/1.%20Base%20de%20Datos%20en%20phpMyAdmin.png)
-![Productos en BD](./public/1.1%20Productos%20en%20BD%20phpMyAdmin.png)
+![Estructura](./public/db_estructura.png)
+![Datos](./public/db_datos.png)
 
 ###  2. Interfaz y Conexión
 *Carga inicial del sistema conectando con la base de datos:*
-![Carga y Conexión](./public/2.%20Carga%20y%20Conexión.png)
+![Conexión](./public/conexion.png)
 
 ###  3. Registro de Productos (CRUD)
 *Proceso de inserción y confirmación de nuevo dato:*
-![Inserción de Datos](./public/3.%20Inserción%20de%20Datos%20(Crear).png)
-![Dato Creado](./public/4.%20Datos%20creado.png)
+![Registro](./public/registro.png)
+![Tabla](./public/tabla_final.png)
 
 ###  4. Pruebas de Validaciones (Seguridad)
 *El sistema rechaza precios negativos y campos vacíos según lo solicitado:*
-![Precio Negativo](./public/5.1%20Validaciones%20Prueba%20de%20Precio%20Negativo.png)
-![Stock Vacío](./public/5.2%20Validaciones%20rueba%20de%20Stock%20Vacío.png)
+![Precio](./public/valida_precio.png)
+![Stock](./public/valida_stock.png)
 
 
