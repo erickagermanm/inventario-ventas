@@ -31,20 +31,16 @@ Su desarrollo contiene una interfaz sencilla y de fácil uso.
 
 ## 5. Capturas Evidencias de Funcionamiento y Pruebas
 
-###  1. Base de Datos (Estructura y Datos)
+### Base de Datos
 ![Estructura](./public/db_estructura.png)
 ![Datos](./public/db_datos.png)
 
-###  2. Interfaz y Conexión
-*Carga inicial del sistema conectando con la base de datos:*
+### Interfaz y Registro
 ![Conexión](./public/conexion.png)
-
-###  3. Registro de Productos (CRUD)
-*Proceso de inserción y confirmación de nuevo dato:*
 ![Registro](./public/registro.png)
 ![Tabla](./public/tabla_final.png)
 
-###  4. Pruebas de Validaciones (Seguridad)
-*El sistema rechaza precios negativos y campos vacíos según lo solicitado:*
+### Pruebas de Validaciones
 ![Precio](./public/valida_precio.png)
 ![Stock](./public/valida_stock.png)
+
